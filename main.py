@@ -1,6 +1,6 @@
-from sims_representation import random_init, set_nodes_as_blocks, crossover, mutation, clone_individual
+from sims_representation import random_init, set_nodes_as_blocks, crossover, mutation, clone_individual, Node
 from utils.block_utils import BlockBuffer
-from evaluation import evaluate
+from evaluation import evaluate, evaluate_to_sun
 
 from operator import itemgetter
 from numpy.random import uniform, randint
@@ -10,6 +10,15 @@ sys.setrecursionlimit(10000)
 
 # TODO Change the start_coord close to wherever you spawn on your server
 start_coord = (-193, 6, 15)
+
+
+def scratch():
+    # n = Node(0, 1, start_coord)
+    bb = BlockBuffer()
+    # set_nodes_as_blocks(n, start_coord, bb)
+    # bb.send_to_server()
+    end_coord = (start_coord[0], start_coord[1] + 100, start_coord[2] - 100)
+    blocks = bb.get_cube_info(start_coord, end_coord)
 
 
 def generate_individual(coordinate):
@@ -35,10 +44,11 @@ def evolution(generations=1000, pop_number=200, mutation_prob=0.1, parent_cuttof
         show_population(population, population_coordinates, block_buffer)
         print(f"Generation --> {generation}")
 
-        evaluations = list(map(evaluate, population))
-        print(max(evaluations))
+        evaluate_ = lambda ind_coord: evaluate_to_sun(ind_coord[0], ind_coord[1], block_buffer)
+        evaluations = list(map(evaluate_, zip(population, population_coordinates)))
+        print(min(evaluations))
         pop_eval_zipped = zip(population, evaluations)
-        pop_eval_zipped = sorted(pop_eval_zipped, key=itemgetter(1), reverse=True)
+        pop_eval_zipped = sorted(pop_eval_zipped, key=itemgetter(1), reverse=False)
         sorted_population, _ = map(list, zip(*pop_eval_zipped))
         parent_cuttoff_idx = int(parent_cuttoff_ratio * pop_number)
         parents = sorted_population[:parent_cuttoff_idx]
@@ -57,4 +67,5 @@ def evolution(generations=1000, pop_number=200, mutation_prob=0.1, parent_cuttof
 
 if __name__ == "__main__":
     evolution(generations=200, pop_number=20, mutation_prob=0.05)
+    # scratch()
 

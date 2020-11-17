@@ -62,3 +62,13 @@ class BlockBuffer:
             type=block_type
         ))
 
+    def get_cube_info(self, start_cord: (int, int, int), end_coord: (int, int, int)):
+        min_x, max_x = (start_cord[0], end_coord[0]) if start_cord[0] < end_coord[0] else (end_coord[0], start_cord[0])
+        min_y, max_y = (start_cord[1], end_coord[1]) if start_cord[1] < end_coord[1] else (end_coord[1], start_cord[1])
+        min_z, max_z = (start_cord[2], end_coord[2]) if start_cord[2] < end_coord[2] else (end_coord[2], start_cord[2])
+
+        response = self._client.readCube(Cube(min=Point(x=min_x, y=min_y, z=min_z),
+                                              max=Point(x=max_x, y=max_y, z=max_z)))
+
+        return response.blocks
+

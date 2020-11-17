@@ -14,6 +14,7 @@ ALLOWED_BLOCKS = [OBSIDIAN,
                   NETHER_BRICK,
                   COBBLESTONE,
                   SLIME,
+                  ACACIA_DOOR
                   ]
 
 
