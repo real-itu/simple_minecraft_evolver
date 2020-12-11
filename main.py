@@ -6,9 +6,9 @@ from operator import itemgetter
 from numpy.random import uniform, randint
 from delete import delete_patch
 import sys
+import time
 sys.setrecursionlimit(10000)
 
-# TODO Change the start_coord close to wherever you spawn on your server
 start_coord = (-193, 6, 15)
 
 
@@ -40,6 +40,9 @@ def evolution(generations=1000, pop_number=200, mutation_prob=0.1, parent_cuttof
     population = [generate_individual(c) for c in population_coordinates]
     block_buffer = BlockBuffer()
     for generation in range(generations):
+        if generation == 0 or generation == 1:
+            time.sleep(50)
+
         delete_patch(block_buffer)
         show_population(population, population_coordinates, block_buffer)
         print(f"Generation --> {generation}")
