@@ -1,5 +1,5 @@
 from numpy.random import choice, randint, uniform
-from utils.block_utils import Blocks, ORIENTATIONS, block_directions, move_coordinate, BlockBuffer, Orientation, \
+from utils.block_utils import Blocks, ORIENTATIONS, block_directions, move_coordinate, ClientHandler, Orientation, \
     BlockType, AIR, OBSIDIAN, REDSTONE_BLOCK, GLASS, BROWN_MUSHROOM_BLOCK, BROWN_GLAZED_TERRACOTTA, NETHER_BRICK, \
     COBBLESTONE, SLIME, ACACIA_DOOR
 from typing import List
@@ -38,7 +38,7 @@ class Node:
 
 
 def set_nodes_as_blocks(node: Node, coordinate: (int, int, int),
-                        block_buffer: BlockBuffer, block_type=None):
+                        block_buffer: ClientHandler, block_type=None):
     block_type = block_type if block_type is not None else node.block_type
     block_orientation = node.orientation
     block_buffer.add_block(coordinate, block_orientation, block_type)
@@ -58,7 +58,7 @@ def update_coordinates(root: Node):
                 neigh.coordinate = move_coordinate(node.coordinate, i)
 
 
-def delete_from_root_node(coordinate: (int, int, int), node: Node, block_buffer: BlockBuffer):
+def delete_from_root_node(coordinate: (int, int, int), node: Node, block_buffer: ClientHandler):
     set_nodes_as_blocks(node, coordinate, block_buffer, AIR)
 
 

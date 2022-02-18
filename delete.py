@@ -1,4 +1,4 @@
-from utils.block_utils import BlockBuffer, AIR
+from utils.block_utils import ClientHandler, AIR
 
 
 def delete_patch(block_buffer):
@@ -8,5 +8,5 @@ def delete_patch(block_buffer):
 
 
 if __name__ == "__main__":
-    buffer = BlockBuffer()
+    buffer = ClientHandler()
     delete_patch(buffer)

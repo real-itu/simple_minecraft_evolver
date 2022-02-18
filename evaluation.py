@@ -1,6 +1,6 @@
 from sims_representation import Node, update_coordinates
 from typing import List
-from utils.block_utils import BlockBuffer, GOLD_BLOCK, AIR
+from utils.block_utils import ClientHandler, GOLD_BLOCK, AIR
 
 
 def evaluate(individual: (Node, List[Node])):
@@ -11,7 +11,7 @@ def evaluate(individual: (Node, List[Node])):
     return fitness
 
 
-def evaluate_to_sun(individual: (Node, List[Node]), pop_coord, block_buffer: BlockBuffer):
+def evaluate_to_sun(individual: (Node, List[Node]), pop_coord, block_buffer: ClientHandler):
     root = individual[0]
 
     # Place the sun

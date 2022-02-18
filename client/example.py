@@ -63,7 +63,7 @@ print(avg_end)
 
 
 from sims_representation import random_init, set_nodes_as_blocks, crossover, mutation, clone_individual, Node
-from utils.block_utils import BlockBuffer
+from utils.block_utils import ClientHandler
 from evaluation import evaluate, evaluate_to_sun
 
 from operator import itemgetter
@@ -78,7 +78,7 @@ start_coord = (-193, 6, 15)
 
 def scratch():
     # n = Node(0, 1, start_coord)
-    bb = BlockBuffer()
+    bb = ClientHandler()
     # set_nodes_as_blocks(n, start_coord, bb)
     # bb.send_to_server()
     end_coord = (start_coord[0], start_coord[1] + 100, start_coord[2] - 100)
@@ -91,7 +91,7 @@ def generate_individual(coordinate):
     return root, node_list
 
 
-def show_population(population, coordinates, block_buffer: BlockBuffer):
+def show_population(population, coordinates, block_buffer: ClientHandler):
     root_nodes_pop = list(zip(*population))
     roots_and_coordinates = zip(root_nodes_pop[0], coordinates)
     buffer_blocks_fn = lambda r: set_nodes_as_blocks(r[0], r[1], block_buffer)
@@ -105,7 +105,7 @@ def evolution(gens=1000, pop_num=200, mutation_p=0.1, parent_cut_r=0.1):
                                start_coord[2] + (i * 20))
                               for i in range(pop_num)]
     population = [generate_individual(c) for c in population_coordinates]
-    block_buffer = BlockBuffer()
+    block_buffer = ClientHandler()
     for generation in range(gens):
         if generation == 0 or generation == 1:
             time.sleep(50)

@@ -1,10 +1,12 @@
 import grpc
+from typing import List, Tuple
 
 import client.minecraft_pb2_grpc as mcraft_grpc
 from client.minecraft_pb2 import *
 
 BLOCKS = BlockType.values()
 ORIENTATIONS = Orientation.values()
+ENTITIES = EntityType.values()
 
 block_directions = {"north": NORTH,
                     "west": WEST,
@@ -29,7 +31,7 @@ def move_coordinate(coord: (int, int, int), side_idx, delta=1):
     return switcher[side_idx](coord)
 
 
-class BlockBuffer:
+class ClientHandler:
     def __init__(self):
         self._blocks = []
         self._channel = grpc.insecure_channel('localhost:5001')
@@ -72,3 +74,18 @@ class BlockBuffer:
 
         return response.blocks
 
+    def spawn_entities(self, entities_and_positions: List[Tuple[int, int, int, int]]):
+        spawn_enitites = list(map(
+            lambda x: SpawnEntity(type=x[0], spawnPosition=Point(x=x[1], y=x[2], z=x[3])),
+            entities_and_positions
+        ))
+        return self._client.spawnEntities(SpawnEntities(spawnEntities=spawn_enitites))
+
+    def read_entities_in_sphere(self, coord: (int, int, int), radius: float):
+        return self._client.readEntitiesInSphere(
+            Sphere(center=Point(x=coord[0], y=coord[1], z=coord[2]), radius=radius)
+        )
+
+    def read_entities(self, uuids: List[str]):
+        parcel = Uuids(uuids=uuids)
+        return self._client.readEntities(parcel)

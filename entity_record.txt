@@ -1,0 +1,270 @@
+==============
+Trying to spawn entity no. 0
+spawned entity -> []
+==============
+Trying to spawn entity no. 1
+spawned entity -> ['type: ENTITY_ARMOR_STAND']
+==============
+Trying to spawn entity no. 2
+spawned entity -> ['type: ENTITY_BAT']
+==============
+Trying to spawn entity no. 3
+spawned entity -> ['type: ENTITY_BLAZE']
+==============
+Trying to spawn entity no. 4
+spawned entity -> ['type: ENTITY_BOAT']
+==============
+Trying to spawn entity no. 5
+spawned entity -> ['type: ENTITY_CAVE_SPIDER']
+==============
+Trying to spawn entity no. 6
+spawned entity -> ['type: ENTITY_CHESTED_MINECART']
+==============
+Trying to spawn entity no. 7
+spawned entity -> []
+==============
+Trying to spawn entity no. 8
+spawned entity -> ['type: ENTITY_COMMANDBLOCK_MINECART']
+==============
+Trying to spawn entity no. 9
+failed to spawn entity 9
+==============
+Trying to spawn entity no. 10
+spawned entity -> []
+==============
+Trying to spawn entity no. 11
+spawned entity -> ['type: ENTITY_CREEPER']
+==============
+Trying to spawn entity no. 12
+spawned entity -> []
+==============
+Trying to spawn entity no. 13
+spawned entity -> ['type: ENTITY_DRAGON_FIREBALL']
+==============
+Trying to spawn entity no. 14
+spawned entity -> ['type: ENTITY_EGG']
+==============
+Trying to spawn entity no. 15
+spawned entity -> ['type: ENTITY_ELDER_GUARDIAN']
+==============
+Trying to spawn entity no. 16
+spawned entity -> ['type: ENTITY_ENDER_CRYSTAL']
+==============
+Trying to spawn entity no. 17
+spawned entity -> ['type: ENTITY_ENDER_DRAGON']
+==============
+Trying to spawn entity no. 18
+spawned entity -> ['type: ENTITY_ENDER_PEARL']
+==============
+Trying to spawn entity no. 19
+spawned entity -> ['type: ENTITY_ENDERMAN']
+==============
+Trying to spawn entity no. 20
+spawned entity -> ['type: ENTITY_ENDERMITE']
+==============
+Trying to spawn entity no. 21
+spawned entity -> ['type: ENTITY_EVOCATION_FANGS']
+==============
+Trying to spawn entity no. 22
+spawned entity -> ['type: ENTITY_EVOCATION_ILLAGER']
+==============
+Trying to spawn entity no. 23
+spawned entity -> ['type: ENTITY_EXPERIENCE_ORB']
+==============
+Trying to spawn entity no. 24
+spawned entity -> ['type: ENTITY_EYE_OF_ENDER']
+==============
+Trying to spawn entity no. 25
+spawned entity -> []
+==============
+Trying to spawn entity no. 26
+spawned entity -> ['type: ENTITY_FIREBALL']
+==============
+Trying to spawn entity no. 27
+spawned entity -> []
+==============
+Trying to spawn entity no. 28
+ERROR !!!!
+==============
+Trying to spawn entity no. 29
+spawned entity -> ['type: ENTITY_FURNACE_MINECART']
+==============
+Trying to spawn entity no. 30
+spawned entity -> ['type: ENTITY_GHAST']
+==============
+Trying to spawn entity no. 31
+spawned entity -> ['type: ENTITY_GIANT']
+==============
+Trying to spawn entity no. 32
+spawned entity -> ['type: ENTITY_GUARDIAN']
+==============
+Trying to spawn entity no. 33
+spawned entity -> ['type: ENTITY_HOPPER_MINECART']
+==============
+Trying to spawn entity no. 34
+spawned entity -> []
+==============
+Trying to spawn entity no. 35
+spawned entity -> ['type: ENTITY_HUMAN']
+==============
+Trying to spawn entity no. 36
+spawned entity -> ['type: ENTITY_HUSK']
+==============
+Trying to spawn entity no. 37
+spawned entity -> ['type: ENTITY_ILLUSION_ILLAGER']
+==============
+Trying to spawn entity no. 38
+spawned entity -> ['type: ENTITY_IRON_GOLEM']
+==============
+Trying to spawn entity no. 39
+spawned entity -> ['type: ENTITY_ITEM']
+==============
+Trying to spawn entity no. 40
+spawned entity -> ['type: ENTITY_ITEM_FRAME']
+==============
+Trying to spawn entity no. 41
+spawned entity -> ['type: ENTITY_LEASH_HITCH']
+==============
+Trying to spawn entity no. 42
+spawned entity -> []
+==============
+Trying to spawn entity no. 43
+spawned entity -> []
+==============
+Trying to spawn entity no. 44
+spawned entity -> ['type: ENTITY_LLAMA_SPIT']
+==============
+Trying to spawn entity no. 45
+spawned entity -> ['type: ENTITY_MAGMA_CUBE']
+==============
+Trying to spawn entity no. 46
+spawned entity -> ['type: ENTITY_MOB_SPAWNER_MINECART']
+==============
+Trying to spawn entity no. 47
+spawned entity -> []
+==============
+Trying to spawn entity no. 48
+spawned entity -> []
+==============
+Trying to spawn entity no. 49
+spawned entity -> []
+==============
+Trying to spawn entity no. 50
+spawned entity -> ['type: ENTITY_PAINTING']
+==============
+Trying to spawn entity no. 51
+spawned entity -> []
+==============
+Trying to spawn entity no. 52
+spawned entity -> []
+==============
+Trying to spawn entity no. 53
+spawned entity -> ['type: ENTITY_PIG_ZOMBIE']
+==============
+Trying to spawn entity no. 54
+failed to spawn entity 54
+==============
+Trying to spawn entity no. 55
+spawned entity -> []
+==============
+Trying to spawn entity no. 56
+spawned entity -> ['type: ENTITY_PRIMED_TNT']
+==============
+Trying to spawn entity no. 57
+spawned entity -> []
+==============
+Trying to spawn entity no. 58
+spawned entity -> ['type: ENTITY_RIDEABLE_MINECART']
+==============
+Trying to spawn entity no. 59
+spawned entity -> []
+==============
+Trying to spawn entity no. 60
+spawned entity -> ['type: ENTITY_SHULKER']
+==============
+Trying to spawn entity no. 61
+spawned entity -> []
+==============
+Trying to spawn entity no. 62
+spawned entity -> ['type: ENTITY_SILVERFISH']
+==============
+Trying to spawn entity no. 63
+spawned entity -> ['type: ENTITY_SKELETON']
+==============
+Trying to spawn entity no. 64
+spawned entity -> []
+==============
+Trying to spawn entity no. 65
+spawned entity -> ['type: ENTITY_SLIME']
+==============
+Trying to spawn entity no. 66
+spawned entity -> ['type: ENTITY_SMALL_FIREBALL']
+==============
+Trying to spawn entity no. 67
+spawned entity -> ['type: ENTITY_SNOWBALL']
+==============
+Trying to spawn entity no. 68
+spawned entity -> ['type: ENTITY_SNOWMAN']
+==============
+Trying to spawn entity no. 69
+spawned entity -> ['type: ENTITY_SPECTRAL_ARROW']
+==============
+Trying to spawn entity no. 70
+spawned entity -> ['type: ENTITY_SPIDER']
+==============
+Trying to spawn entity no. 71
+spawned entity -> ['type: ENTITY_SPLASH_POTION']
+==============
+Trying to spawn entity no. 72
+spawned entity -> []
+==============
+Trying to spawn entity no. 73
+spawned entity -> ['type: ENTITY_STRAY']
+==============
+Trying to spawn entity no. 74
+spawned entity -> ['type: ENTITY_THROWN_EXP_BOTTLE']
+==============
+Trying to spawn entity no. 75
+spawned entity -> ['type: ENTITY_TIPPED_ARROW']
+==============
+Trying to spawn entity no. 76
+spawned entity -> ['type: ENTITY_TNT_MINECART']
+==============
+Trying to spawn entity no. 77
+ERROR!!!!
+==============
+Trying to spawn entity no. 78
+spawned entity -> ['type: ENTITY_VEX']
+==============
+Trying to spawn entity no. 79
+spawned entity -> []
+==============
+Trying to spawn entity no. 80
+spawned entity -> ['type: ENTITY_VINDICATION_ILLAGER']
+==============
+Trying to spawn entity no. 81
+spawned entity -> []
+==============
+Trying to spawn entity no. 82
+spawned entity -> ['type: ENTITY_WITCH']
+==============
+Trying to spawn entity no. 83
+spawned entity -> ['type: ENTITY_WITHER']
+==============
+Trying to spawn entity no. 84
+spawned entity -> ['type: ENTITY_WITHER_SKELETON']
+==============
+Trying to spawn entity no. 85
+spawned entity -> ['type: ENTITY_WITHER_SKULL']
+==============
+Trying to spawn entity no. 86
+spawned entity -> []
+==============
+Trying to spawn entity no. 87
+spawned entity -> ['type: ENTITY_ZOMBIE']
+==============
+Trying to spawn entity no. 88
+spawned entity -> []
+==============
+Trying to spawn entity no. 89
+spawned entity -> ['type: ENTITY_ZOMBIE_VILLAGER']
